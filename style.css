@@ -42,7 +42,7 @@ body {
     border-radius: 30px;
 }
 
-.fa-circle {
+.red {
     color: red;
 }
 
@@ -79,6 +79,24 @@ span {
 }
 
 #right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     height: 98%;
     width: 80%;
+}
+
+.board{
+    height: 95%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.black {
+    color: #000;
+}
+.white {
+    color: #fff;
 }
