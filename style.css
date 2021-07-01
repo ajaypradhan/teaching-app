@@ -87,16 +87,36 @@ span {
     width: 80%;
 }
 
-.board{
+/* .board{
     height: 95%;
     width: 100%;
-    background-color: #fff;
+    background-color: #707070;
     border-radius: 10px;
+} */
+.board-color{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stop-btn{
+    position: absolute;
+    background-color: red;
+    border-radius: 5px;
+    left: 580px;
+}
+
+h5{
+    font-family: 'Roboto',sans-serif;
+    color: #fff;
+    padding: 10px 15px;
 }
 
 .black {
     color: #000;
+    padding: 0 15px;
 }
 .white {
     color: #fff;
+    padding: 0 15px;
 }
