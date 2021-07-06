@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); * {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -14,6 +16,7 @@ body {
     height: 100vh;
 }
 
+/* container section */
 .container {
     position: absolute;
     display: flex;
@@ -23,6 +26,7 @@ body {
     width: 98%;
 }
 
+/* left side of the site */
 #left {
     display: flex;
     flex-direction: column;
@@ -40,6 +44,7 @@ body {
     height: 32px;
     width: 101px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .red {
@@ -50,6 +55,10 @@ span {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
+}
+
+.gallery {
+    cursor: pointer;
 }
 
 .tools-panel {
@@ -64,13 +73,19 @@ span {
 }
 
 .tool {
-    background-color: #E8F6EF;
+    background-color: #e8f6ef;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 35px;
     width: 35px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.tool:hover {
+    transform: scaleX(1.05);
 }
 
 .video-circle {
@@ -78,6 +93,7 @@ span {
     object-fit: cover;
 }
 
+/* right side of the side */
 #right {
     display: flex;
     flex-direction: column;
@@ -87,27 +103,40 @@ span {
     width: 80%;
 }
 
-/* .board{
+.board {
+    position: relative;
+    background-color: #4c4c6c;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 95%;
     width: 100%;
-    background-color: #707070;
+}
+
+#myCanvas {
+    position: absolute;
+    height: 98%;
+    width: 98%;
     border-radius: 10px;
-} */
-.board-color{
+    background-color: #fff;
+}
+.board-color {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.stop-btn{
+.stop-btn {
     position: absolute;
     background-color: red;
     border-radius: 5px;
     left: 580px;
+    cursor: pointer;
 }
 
-h5{
-    font-family: 'Roboto',sans-serif;
+h5 {
+    font-family: 'Roboto', sans-serif;
     color: #fff;
     padding: 10px 15px;
 }
@@ -116,6 +145,7 @@ h5{
     color: #000;
     padding: 0 15px;
 }
+
 .white {
     color: #fff;
     padding: 0 15px;
