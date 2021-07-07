@@ -116,8 +116,6 @@ span {
 
 #myCanvas {
     position: absolute;
-    height: 98%;
-    width: 98%;
     border-radius: 10px;
     background-color: #fff;
 }
