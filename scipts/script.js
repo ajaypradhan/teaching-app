@@ -24,27 +24,52 @@ blackBG.addEventListener('click', function () {
     canvas.setAttribute('style', 'background-color:black');
 });
 
+//line store in array
+
+let linesDB = [];
+let line = [];
+
 //draw on board
 
 let isPenDown = false;
 
 canvas.addEventListener('mousedown', function (e) {
+    console.log('Inside mouse down');
     isPenDown = true;
     let x = e.clientX - 308;
     let y = e.clientY - 31;
     ctx.beginPath();
     ctx.moveTo(x, y);
+
+    let pointObj = {
+        x: x,
+        y: y,
+        type: 'md',
+    };
+    line.push(pointObj);
 });
 
 canvas.addEventListener('mousemove', function (e) {
     if (isPenDown) {
+        console.log('Inside mousemove');
         let x = e.clientX - 308;
         let y = e.clientY - 31;
         ctx.lineTo(x, y);
         ctx.stroke();
+
+        let pointObj = {
+            x: x,
+            y: y,
+            type: 'mm',
+        };
+        line.push(pointObj);
     }
 });
 
 canvas.addEventListener('mouseup', function (e) {
     isPenDown = false;
+    linesDB.push(line);
+    line = [];
+
+    console.log(linesDB);
 });

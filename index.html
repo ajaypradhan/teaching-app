@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link
             rel="stylesheet"
             href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -37,7 +37,7 @@
                     </svg>
                 </div>
                 <div class="tools-panel">
-                    <div class="tool pen">
+                    <div class="tool" id="pen">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -52,7 +52,7 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool eraser">
+                    <div class="tool" id="eraser">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -67,7 +67,7 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool undo">
+                    <div class="tool" id="undo">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -81,7 +81,7 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool redo">
+                    <div class="tool" id="redo">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -96,7 +96,7 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool note">
+                    <div class="tool" id="note">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -111,7 +111,7 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool pre-page">
+                    <div class="tool" id="pre-page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -138,7 +138,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="tool next-page">
+                    <div class="tool" id="next-page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -165,7 +165,7 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="tool add-page">
+                    <div class="tool" id="add-page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -205,7 +205,11 @@
             </div>
             <div id="right">
                 <div class="board">
-                    <canvas id="myCanvas" width="1180.120" height="633.763"></canvas>
+                    <canvas
+                        id="myCanvas"
+                        width="1180.120"
+                        height="633.763"
+                    ></canvas>
                 </div>
                 <div class="board-color">
                     <i class="fas fa-circle white"></i>
@@ -216,6 +220,9 @@
                 </div>
             </div>
         </div>
-        <script src="./script.js"></script>
+
+        <!-- JavaScripts -->
+        <script src="./scipts/script.js"></script>
+        <script src="./scipts/undo.js"></script>
     </body>
 </html>
