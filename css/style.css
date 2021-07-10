@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
 
 * {
     box-sizing: border-box;
@@ -28,6 +28,7 @@ body {
 
 /* left side of the site */
 #left {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,12 +85,75 @@ span {
     transition: 0.1s ease-in-out;
     opacity: 0.7;
 }
+
 .active {
     opacity: 1;
 }
 
 .tool:hover {
     transform: scaleX(1.05);
+}
+
+.tools-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pen-option {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    left: 149px;
+    top: 96px;
+    background-color: #2C2C51;
+    padding: 12px;
+    z-index: 10;
+    border-radius: 26px;
+}
+
+.color-section {
+    padding: 5px;
+}
+
+.black-pen ,.blue-pen, .red-pen {
+    padding-right: 10px;
+}
+
+.black-pen {
+    color: black;
+}
+
+.blue-pen {
+    color: blue;
+}
+
+.red-pen {
+    color: red;
+}
+
+.eraser-option {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2C2C51;
+    padding: 12px;
+    left: 149px;
+    top: 152px;
+    z-index: 10;
+    border-radius: 26px;
+}
+
+#color-picker {
+    height: 25px;
+    width: 25px;
+}
+
+.size-section {
 }
 
 .video-circle {
@@ -123,12 +187,14 @@ span {
     border-radius: 10px;
     background-color: #fff;
 }
+
 .board-color {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .stop-btn {
     position: absolute;
     background-color: red;
