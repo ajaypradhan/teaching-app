@@ -83,11 +83,6 @@ span {
     border-radius: 10px;
     cursor: pointer;
     transition: 0.1s ease-in-out;
-    opacity: 0.7;
-}
-
-.active {
-    opacity: 1;
 }
 
 .tool:hover {
@@ -103,8 +98,7 @@ span {
 
 .pen-option {
     position: absolute;
-    display: flex;
-    /* display: none; */
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -140,7 +134,6 @@ span {
 
 .eraser-option {
     position: absolute;
-    /* display: flex; */
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -164,7 +157,9 @@ span {
     border-radius: 50%;
     object-fit: cover;
 }
-
+.select {
+    display: flex;
+}
 /* right side of the side */
 #right {
     display: flex;

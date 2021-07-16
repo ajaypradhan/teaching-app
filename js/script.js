@@ -1,3 +1,4 @@
+//video element
 const videoElement = document.querySelector('video');
 
 //canvas section
@@ -73,3 +74,4 @@ canvas.addEventListener('mouseup', function (e) {
 
     console.log(linesDB);
 });
+
