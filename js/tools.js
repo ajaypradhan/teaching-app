@@ -69,5 +69,10 @@ function drawLinesFromDB() {
 function blankPage() {
     linesDB = [];
     redoLinesDB = [];
+    // console.log('new page');
+    let imagePath = canvas.toDataURL('image/jpg');
+    // console.log(imagePath);
+    imgLinks.push(imagePath);
+    console.log(imgLinks);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }

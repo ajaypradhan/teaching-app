@@ -15,6 +15,7 @@ const blackBG = document.querySelector('.black');
 let linesDB = [];
 let line = [];
 let redoLinesDB = [];
+let imgLinks = [];
 
 //canvas
 const ctx = canvas.getContext('2d');
@@ -25,7 +26,7 @@ canvas.addEventListener('mousedown', function (e) {
     if (redoLinesDB.length) {
         redoLinesDB = [];
     }
-    console.log('Inside mouse down');
+    // console.log('Inside mouse down');
     isPenDown = true;
     let x = e.clientX - 308;
     let y = e.clientY - 31;
@@ -44,7 +45,7 @@ canvas.addEventListener('mousedown', function (e) {
 
 canvas.addEventListener('mousemove', function (e) {
     if (isPenDown) {
-        console.log('Inside mousemove');
+        // console.log('Inside mousemove');
         let x = e.clientX - 308;
         let y = e.clientY - 31;
         ctx.lineTo(x, y);
@@ -60,13 +61,13 @@ canvas.addEventListener('mousemove', function (e) {
 });
 
 canvas.addEventListener('mouseup', function (e) {
-    console.log('mouseup');
+    // console.log('mouseup');
     isPenDown = false;
 
     linesDB.push(line);
     line = [];
 
-    console.log(linesDB);
+    // console.log(linesDB);
 });
 
 
