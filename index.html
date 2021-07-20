@@ -97,18 +97,18 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool" id="note">
+                    <div class="tool" id="highlighter">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 28.8 34.596"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 38.25 36"
                         >
                             <path
-                                id="Icon_map-square-pin"
-                                data-name="Icon map-square-pin"
-                                d="M32.4.72H3.6v28.8H14.467l3.916,5.8,3.917-5.8H32.4Z"
-                                transform="translate(-3.6 -0.72)"
+                                id="Icon_awesome-highlighter"
+                                data-name="Icon awesome-highlighter"
+                                d="M0,33.749,7.026,36l2.493-2.493L4.8,28.794ZM8.762,16.873A2.573,2.573,0,0,0,8,19.552l.918,3.011L5.34,26.145l6.766,6.766,3.576-3.576,3.005.92a2.573,2.573,0,0,0,2.682-.758l2.5-2.928L11.681,14.381,8.762,16.873Zm28.358-11.3L32.676,1.13A3.86,3.86,0,0,0,27.394.965l-14,11.95L25.335,24.853l11.95-14a3.859,3.859,0,0,0-.165-5.283Z"
+                                transform="translate(0 0)"
                             />
                         </svg>
                     </div>
@@ -204,6 +204,7 @@
                         </div>
                         <div class="size-section">
                             <input
+                                class="pen-range"
                                 type="range"
                                 name="pen-size"
                                 id="pen-size"
@@ -214,10 +215,29 @@
                     </div>
                     <div class="eraser-option">
                         <input
+                            class="eraser-range"
                             type="range"
                             name="eraser-size"
                             id="eraser-size"
                         />
+                    </div>
+                    <div class="highlighter-option">
+                        <div class="color-section">
+                            <i class="fas fa-circle black-highlighter"></i>
+                            <i class="fas fa-circle blue-highlighter"></i>
+                            <i class="fas fa-circle red-highlighter"></i>
+                            <input type="color" id="color-picker" />
+                        </div>
+                        <div class="size-section">
+                            <input
+                                class="highlighter-range"
+                                type="range"
+                                name="highlighter-size"
+                                id="highlighter-size"
+                                min="1"
+                                max="15"
+                            />
+                        </div>
                     </div>
                 </div>
                 <div class="video-container">
