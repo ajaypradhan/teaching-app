@@ -68,7 +68,7 @@ span {
     align-items: center;
     justify-content: space-evenly;
     background-color: #4c4c6c;
-    height: 55%;
+    height: 40%;
     width: 60px;
     border-radius: 10px;
 }
@@ -97,8 +97,7 @@ span {
     align-items: center;
 }
 
-.pen-option,
-.highlighter-option {
+.pen-option {
     position: absolute;
     display: none;
     flex-direction: column;
@@ -106,18 +105,10 @@ span {
     justify-content: space-between;
     background-color: #2c2c51;
     padding: 12px;
+    left: 149px;
+    top: 150px;
     z-index: 10;
     border-radius: 26px;
-}
-
-.pen-option {
-    left: 149px;
-    top: 96px;
-}
-
-.highlighter-option {
-    left: 149px;
-    top: 280px;
 }
 
 .color-section {
@@ -126,15 +117,11 @@ span {
 
 .black-pen,
 .blue-pen,
-.red-pen,
-.highlighter-pen,
-.highlighter-pen,
-.highlighter-pen {
+.red-pen {
     padding-right: 10px;
 }
 
-.black-pen,
-.black-highlighter {
+.black-pen {
     color: black;
 }
 
@@ -143,8 +130,7 @@ span {
     color: blue;
 }
 
-.red-pen,
-.red-highlighter {
+.red-pen {
     color: red;
 }
 
@@ -156,7 +142,7 @@ span {
     background-color: #2c2c51;
     padding: 12px;
     left: 149px;
-    top: 152px;
+    top: 210px;
     z-index: 10;
     border-radius: 26px;
 }

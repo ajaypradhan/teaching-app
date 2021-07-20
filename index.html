@@ -97,22 +97,7 @@
                             />
                         </svg>
                     </div>
-                    <div class="tool" id="highlighter">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="22"
-                            height="22"
-                            viewBox="0 0 38.25 36"
-                        >
-                            <path
-                                id="Icon_awesome-highlighter"
-                                data-name="Icon awesome-highlighter"
-                                d="M0,33.749,7.026,36l2.493-2.493L4.8,28.794ZM8.762,16.873A2.573,2.573,0,0,0,8,19.552l.918,3.011L5.34,26.145l6.766,6.766,3.576-3.576,3.005.92a2.573,2.573,0,0,0,2.682-.758l2.5-2.928L11.681,14.381,8.762,16.873Zm28.358-11.3L32.676,1.13A3.86,3.86,0,0,0,27.394.965l-14,11.95L25.335,24.853l11.95-14a3.859,3.859,0,0,0-.165-5.283Z"
-                                transform="translate(0 0)"
-                            />
-                        </svg>
-                    </div>
-                    <div class="tool" id="pre-page">
+                    <!-- <div class="tool" id="pre-page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -138,8 +123,8 @@
                                 />
                             </g>
                         </svg>
-                    </div>
-                    <div class="tool" id="next-page">
+                    </div> -->
+                    <!-- <div class="tool" id="next-page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -165,7 +150,7 @@
                                 />
                             </g>
                         </svg>
-                    </div>
+                    </div> -->
                     <div class="tool" id="add-page">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -204,10 +189,11 @@
                         </div>
                         <div class="size-section">
                             <input
+                                id="penSize"
                                 class="pen-range"
                                 type="range"
                                 name="pen-size"
-                                id="pen-size"
+                                value="1"
                                 min="1"
                                 max="15"
                             />
@@ -215,29 +201,14 @@
                     </div>
                     <div class="eraser-option">
                         <input
+                            id="eraserSize"
                             class="eraser-range"
                             type="range"
                             name="eraser-size"
-                            id="eraser-size"
+                            value="1"
+                            min="1"
+                            max="200"
                         />
-                    </div>
-                    <div class="highlighter-option">
-                        <div class="color-section">
-                            <i class="fas fa-circle black-highlighter"></i>
-                            <i class="fas fa-circle blue-highlighter"></i>
-                            <i class="fas fa-circle red-highlighter"></i>
-                            <input type="color" id="color-picker" />
-                        </div>
-                        <div class="size-section">
-                            <input
-                                class="highlighter-range"
-                                type="range"
-                                name="highlighter-size"
-                                id="highlighter-size"
-                                min="1"
-                                max="15"
-                            />
-                        </div>
                     </div>
                 </div>
                 <div class="video-container">
@@ -269,11 +240,14 @@
         </div>
 
         <!-- JavaScripts -->
-        <script src="./js/script.js"></script>
+        <!-- <script src="./js/script.js"></script>
         <script src="./js/tools_option.js"></script>
         <script src="./js/undo.js"></script>
         <script src="./js/redo.js"></script>
         <script src="./js/add_new_sheet.js"></script>
-        <script src="./js/db.js"></script>
+        <script src="./js/db.js"></script> -->
+        <script src="./script.js"></script>
+        <script src="./tools.js"></script>
+        <script src="./drawing_tools.js"></script>
     </body>
 </html>
