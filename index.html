@@ -16,7 +16,7 @@
     <body>
         <div class="container">
             <div id="left">
-                <div class="record">
+                <div class="record" id="start">
                     <i class="fas fa-circle red"></i>
                     <span>RECORD</span>
                 </div>
@@ -229,8 +229,13 @@
                 <div class="board-color">
                     <i class="fas fa-circle white"></i>
                     <i class="fas fa-circle black"></i>
-                    <div class="stop-btn">
+                    <div class="stop-btn" id="stop">
                         <h5>STOP</h5>
+                    </div>
+                    
+                    <div class="download-btn" >
+                        <a id="download" href="#" ><h5>Download</h5></a>
+                        <!-- <h5>Download</h5> -->
                     </div>
                 </div>
             </div>
@@ -240,5 +245,6 @@
         <script src="./js/script.js"></script>
         <script src="./js/tools.js"></script>
         <script src="./js/drawing_tools.js"></script>
+        <script src="./js/record.js"></script>
     </body>
 </html>
