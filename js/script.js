@@ -1,5 +1,6 @@
 const videoElement = document.querySelector('video');
 const canvas = document.getElementById('myCanvas');
+const gallery = document.querySelector('.gallery');
 
 const whiteBG = document.querySelector('.white');
 const blackBG = document.querySelector('.black');
@@ -19,7 +20,7 @@ let imgLinks = [];
 
 //canvas
 const ctx = canvas.getContext('2d');
-ctx.lineCap = "round"; //round lines
+ctx.lineCap = 'round'; //round lines
 let isPenDown = false;
 
 canvas.addEventListener('mousedown', function (e) {
@@ -70,8 +71,6 @@ canvas.addEventListener('mouseup', function (e) {
     // console.log(linesDB);
 });
 
-
-
 whiteBG.addEventListener('click', function () {
     canvas.setAttribute('style', 'background-color:white');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -80,4 +79,8 @@ whiteBG.addEventListener('click', function () {
 blackBG.addEventListener('click', function () {
     canvas.setAttribute('style', 'background-color:black');
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+gallery.addEventListener('click', function () {
+    window.location.assign('pdf.html');
 });
