@@ -70,9 +70,21 @@ function blankPage() {
     linesDB = [];
     redoLinesDB = [];
     // console.log('new page');
-    let imagePath = canvas.toDataURL('image/jpg');
-    // console.log(imagePath);
-    imgLinks.push(imagePath);
-    console.log(imgLinks);
+    let sheetURL = canvas.toDataURL('image/jpg');
+    console.log(sheetURL);
+    addSheet(sheetURL, 'photo');
+    imgLinks.push(sheetURL);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+function addSheet(sheetURL, mediaType) {
+    let txnObject = db.transaction('Sheet', 'readwrite'); // start transaction on mediaTable
+    let mediaTable = txnObject.objectStore('Sheet'); // this will get access to mediaTable
+
+    mediaTable.add({ sid: Date.now(), type: mediaType, url: sheetURL }); // it will add this object in mediaTable or mediaStore
+
+    txnObject.onerror = function (e) {
+        console.log('txn failed');
+        console.log(e);
+    };
 }
