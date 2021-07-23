@@ -38,3 +38,11 @@ function appendSheet(sheetObj) {
 document.querySelector('.back').addEventListener('click', function(){
     window.location.assign('index.html');
 })
+
+//pdf download
+
+document.getElementById('pdfBtn'),addEventListener('click', function(){
+    const notes  = this.document.querySelector('.pdf')
+    console.log(notes);
+    html2pdf().from(notes).save();
+})
